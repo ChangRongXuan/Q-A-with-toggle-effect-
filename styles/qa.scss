@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  user-select: none; 
+  -webkit-user-drag: none;
+}
+
+body{
+  background: #F6F6F5;
+}
+
+.qa-wrap{
+  padding: 20px 8px;
+
+      h2{
+        font-family: 'Noto Serif TC', serif;
+        font-style: normal;
+        font-weight: 700;
+        color:  #000928;
+        // width: 80%;
+        width: 97%;
+        margin: auto;
+        margin-bottom: 12px;
+        min-width: 250px;
+        font-size: 24px;
+      }
+
+      .qa-list{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        width: 97%;
+        margin: auto;
+        padding: 12px 16px;
+        color:  #000928;
+        margin-bottom: 8px;
+
+          .qa-list-title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+                svg{
+                  width: 22px;
+                  height: 24px;
+                }
+
+                svg:hover{
+                  cursor: pointer;
+                }
+
+                p{
+                  width: 85%;
+                  line-height: 24px;
+                  text-align: justify;
+                  opacity: 0.87;
+                  font-family: 'Noto Sans TC', sans-serif;
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 18px;
+                }
+
+          
+          }
+
+
+          .qa-list-detail-none{
+            display: none;
+            transition: .5s linear;
+          }
+
+          .qa-list-detail-block{
+            display: block;
+            margin: 0px;
+            transition: .5s linear;
+
+            p{
+              text-align: justify;
+              padding-top: 12px;
+              border-top: 1px solid #E0E0E0;
+              color: #000928;
+              opacity: 0.66;
+              font-family: 'Noto Sans TC', sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 200%;
+              margin-top: 0px;
+            }
+          } 
+
+      }
+
+}
+
+@media screen and (min-width: 320px) { 
+
+  .qa-list{
+    max-width: 600px;
+  }
+
+
+  .qa-wrap{
+    h2{
+      max-width: 600px;
+      font-size: 32px;
+    }
+  }
+
+
+
+
+
+
+}
